@@ -9,13 +9,12 @@ body {
 }
 
 #quote-box {
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
     text-align: center;
-    max-width: 600px;
-    width: 100%;
 }
 
 #text {
@@ -28,26 +27,6 @@ body {
     margin-bottom: 20px;
 }
 
-.btn {
+#new-quote, #tweet-quote {
     margin: 5px;
-    padding: 10px 20px;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    color: white;
-}
-
-.btn-info {
-    background-color: #17a2b8;
-    color: white;
-}
-
-.error {
-    color: red;
-    margin-top: 20px;
 }

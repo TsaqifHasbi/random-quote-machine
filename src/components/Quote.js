@@ -28,12 +28,24 @@ const Quote = () => {
     }, []);
 
     return (
-        <div id="quote-box" className="container text-center">
-            <div id="text" className="mb-3">{quote || 'Loading quote...'}</div>
-            <div id="author" className="mb-3">{author || 'Loading author...'}</div>
-            {error && <div className="error">{error}</div>}
-            <button id="new-quote" className="btn btn-primary" onClick={fetchQuote}>New Quote</button>
-            <a id="tweet-quote" className="btn btn-info" href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(quote)} - ${encodeURIComponent(author)}`} target="_blank" rel="noopener">Tweet Quote</a>
+        <div id="quote-box">
+            {error ? (
+                <div id="error" style={{ color: 'red' }}>{error}</div>
+            ) : (
+                <>
+                    <div id="text">{quote}</div>
+                    <div id="author">{author}</div>
+                </>
+            )}
+            <button id="new-quote" onClick={fetchQuote}>New Quote</button>
+            <a
+                id="tweet-quote"
+                href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Tweet Quote
+            </a>
         </div>
     );
 };
