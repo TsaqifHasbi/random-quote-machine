@@ -5,28 +5,16 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
 }
 
 #quote-box {
-    background-color: white;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
     text-align: center;
 }
 
-#text {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-#author {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-#new-quote, #tweet-quote {
+.btn {
     margin: 5px;
 }
